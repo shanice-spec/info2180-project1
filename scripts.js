@@ -15,7 +15,3 @@ onload= function(){
         
     })
 }
-/*if(email.value !=''){
-            message.innerHTML= `Thank you! your email address ${email.value} has been added to our mailing list` ;
-            email.value='';
-        }*/
