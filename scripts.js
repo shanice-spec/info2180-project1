@@ -4,13 +4,18 @@ onload= function(){
     
     this.addEventListener('submit', (e)=>{
         e.preventDefault();
-        if(email.value !=''){
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)){
             message.innerHTML= `Thank you! your email address ${email.value} has been added to our mailing list` ;
             email.value='';
-        }else{
+        }
+        else{
             message.innerHTML='Please enter a valid email address';
             email.value='';
         }
         
     })
 }
+/*if(email.value !=''){
+            message.innerHTML= `Thank you! your email address ${email.value} has been added to our mailing list` ;
+            email.value='';
+        }*/
